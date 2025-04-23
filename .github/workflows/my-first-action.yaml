@@ -1,0 +1,19 @@
+name: my first github
+on: 
+  push:
+    branches:
+     - main
+
+env:
+  PROJECT_NAME: githubactions-demo
+  COURSE: AI-Learning
+jobs:
+  myexamplejob:
+    runs-on: ubuntu-latest
+    steps:
+     - run: echo "checkout the repository"
+     - name: "checkout repository"
+       uses: actions/checkout@
+     - run: printenv
+     - run: echo "this is the env ${{env.PROJECT_NAME  }} and ${{ env.COURSE  }}  "}}"
+
