@@ -13,7 +13,7 @@ jobs:
     steps:
      - run: echo "checkout the repository"
      - name: "checkout repository"
-       uses: actions/checkout@v5
+       uses: actions/checkout@v4
      - run: printenv
      - run: echo "this is the env ${{env.PROJECT_NAME  }} and ${{ env.COURSE  }}  "}}"
 
